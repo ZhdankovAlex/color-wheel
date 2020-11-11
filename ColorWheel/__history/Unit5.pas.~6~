@@ -1,0 +1,54 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm5 = class(TForm)
+    Panel1: TPanel;
+    Memo1: TMemo;
+    Image1: TImage;
+    Memo2: TMemo;
+    Image2: TImage;
+    Memo3: TMemo;
+    Image3: TImage;
+    Memo4: TMemo;
+    Image4: TImage;
+    Image5: TImage;
+    SpeedButton1: TSpeedButton;
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit6;
+
+procedure TForm5.FormCreate(Sender: TObject);
+begin
+     Image1.Picture.LoadFromFile('IMAGES\001.bmp');
+     Image2.Picture.LoadFromFile('IMAGES\002.bmp');
+     Image3.Picture.LoadFromFile('IMAGES\003.bmp');
+     Image4.Picture.LoadFromFile('IMAGES\004.bmp');
+     Image5.Picture.LoadFromFile('IMAGES\005.bmp');
+
+end;
+
+procedure TForm5.SpeedButton1Click(Sender: TObject);
+begin
+    Form6.Showmodal;
+end;
+
+end.

@@ -1,0 +1,105 @@
+unit Unit4;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TForm4 = class(TForm)
+    CheckBox2: TCheckBox;
+    CheckBox3: TCheckBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    CheckBox4: TCheckBox;
+    CheckBox5: TCheckBox;
+    CheckBox6: TCheckBox;
+    Label3: TLabel;
+    CheckBox7: TCheckBox;
+    CheckBox8: TCheckBox;
+    CheckBox9: TCheckBox;
+    CheckBox1: TCheckBox;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    RadioButton4: TRadioButton;
+    RadioButton5: TRadioButton;
+    RadioButton6: TRadioButton;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    Label21: TLabel;
+    RadioButton7: TRadioButton;
+    RadioButton8: TRadioButton;
+    RadioButton9: TRadioButton;
+    Label22: TLabel;
+    Label23: TLabel;
+    Label24: TLabel;
+    RadioButton10: TRadioButton;
+    RadioButton11: TRadioButton;
+    RadioButton12: TRadioButton;
+    Button1: TButton;
+    Edit1: TEdit;
+    Label25: TLabel;
+    Label26: TLabel;
+    Label27: TLabel;
+    Label28: TLabel;
+    Label29: TLabel;
+    procedure FormCreate(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm4.FormCreate(Sender: TObject);
+begin
+       CheckBox1.Checked:=False;
+       CheckBox2.Checked:=False;
+       CheckBox3.Checked:=False;
+       CheckBox4.Checked:=False;
+       CheckBox5.Checked:=False;
+       CheckBox6.Checked:=False;
+       CheckBox7.Checked:=False;
+       CheckBox8.Checked:=False;
+       CheckBox9.Checked:=False;
+       RadioButton1.Enabled:=True;
+       RadioButton2.Enabled:=True;
+       RadioButton3.Enabled:=True;
+       RadioButton4.Enabled:=True;
+       RadioButton5.Enabled:=True;
+       RadioButton6.Enabled:=True;
+       RadioButton7.Enabled:=True;
+       RadioButton8.Enabled:=True;
+       RadioButton9.Enabled:=True;
+       RadioButton10.Enabled:=True;
+       RadioButton11.Enabled:=True;
+       RadioButton12.Enabled:=True;
+end;
+
+
+
+end.

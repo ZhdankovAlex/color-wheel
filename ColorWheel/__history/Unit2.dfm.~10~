@@ -1,0 +1,114 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = '               '#1048#1075#1088#1072'.'
+  ClientHeight = 457
+  ClientWidth = 439
+  Color = clBtnText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWhite
+  Font.Height = -16
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 19
+  object Image1: TImage
+    Left = 14
+    Top = 16
+    Width = 380
+    Height = 380
+  end
+  object Label5: TLabel
+    Left = 8
+    Top = 2
+    Width = 113
+    Height = 8
+    Caption = 'Game By Double_Decker_Trouble'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -7
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 14
+    Top = 405
+    Width = 135
+    Height = 8
+    Caption = 'STOPPING BEFORE CLOSING THE FORM'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -7
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object LabeledEdit1: TLabeledEdit
+    Left = 156
+    Top = 419
+    Width = 197
+    Height = 30
+    EditLabel.Width = 101
+    EditLabel.Height = 16
+    EditLabel.Caption = #1042#1072#1096' '#1088#1077#1079#1091#1083#1100#1090#1072#1090
+    EditLabel.Font.Charset = RUSSIAN_CHARSET
+    EditLabel.Font.Color = clWhite
+    EditLabel.Font.Height = -15
+    EditLabel.Font.Name = 'System'
+    EditLabel.Font.Style = [fsBold]
+    EditLabel.ParentFont = False
+    Enabled = False
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Snap ITC'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 419
+    Width = 105
+    Height = 30
+    Caption = 'START/STOP'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 408
+    Top = 368
+  end
+  object Timer2: TTimer
+    Enabled = False
+    OnTimer = Timer2Timer
+    Left = 408
+    Top = 320
+  end
+  object Timer3: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer3Timer
+    Left = 408
+    Top = 280
+  end
+  object Timer4: TTimer
+    Enabled = False
+    OnTimer = Timer4Timer
+    Left = 408
+    Top = 240
+  end
+end
